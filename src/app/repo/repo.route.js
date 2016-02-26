@@ -9,10 +9,10 @@
   function routerConfig($stateProvider) {
     $stateProvider
       .state('repo', {
-        url: '/repo',
+        url: '/repo/:id',
         templateUrl: 'app/repo/repo.html',
-        controller: function () {},
-        controllerAs: 'user'
+        controller: 'RepoController',
+        controllerAs: 'repo'
       });
   }
 

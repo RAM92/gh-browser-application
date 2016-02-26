@@ -1,5 +1,6 @@
 <div>
-    
+    <h2 class="md-display-3">{{user.data.name}}</h2>
+    <h1 class="md-display-1">{{user.data.login}}</h1>
   <md-content>
     <md-list>
       <md-subheader class="md-no-sticky"><ng-pluralize count="user.data.repos.length"
@@ -8,14 +9,15 @@
       <md-list-item class="md-3-line" ng-repeat="repo in user.data.repos">
         <!--<img ng-src="{{item.face}}?{{$index}}" class="md-avatar" alt="{{item.who}}" />-->
         <div class="md-list-item-text" layout="column">
-          <h3>{{ repo.name }}</h3>
+          <h3 ui-sref="repo({id: repo.id})">{{ repo.name }}</h3>
           <h4>{{ repo.full_name }}</h4>
+          <span>{{repo.forks}} forks</span>
+          <span>{{repo.stargazers_count}} stars</span>
+          <md-button ui-sref="repo({id: repo.id})">View</md-button>
           <!--<p>{{ item.notes }}</p>-->
         </div>
       </md-list-item>
       <md-divider ></md-divider>
     </md-list>
   </md-content>
-    
-    <pre>{{user.data | json}}</pre>
 </div>

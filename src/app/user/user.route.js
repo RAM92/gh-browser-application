@@ -9,7 +9,7 @@
   function routerConfig($stateProvider) {
     $stateProvider
       .state('user', {
-        url: '/user',
+        url: '/user/',
         templateUrl: 'app/user/user.html',
         controller: 'UserController',
         controllerAs: 'user',
