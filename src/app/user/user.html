@@ -10,7 +10,6 @@
         <!--<img ng-src="{{item.face}}?{{$index}}" class="md-avatar" alt="{{item.who}}" />-->
         <div class="md-list-item-text" layout="column">
           <h3 ui-sref="repo({id: repo.id})">{{ repo.name }}</h3>
-          <h4>{{ repo.full_name }}</h4>
           <span>{{repo.forks}} forks</span>
           <span>{{repo.stargazers_count}} stars</span>
           <md-button ui-sref="repo({id: repo.id})">View</md-button>
