@@ -5,7 +5,7 @@
   angular
     .module('ghApplication')
     .constant('malarkey', malarkey)
-    .constant('moment', moment);
-    .constant('GITHUB_URL', 'https://api.github.com')
+    .constant('moment', moment)
+    .constant('GITHUB_URL', 'https://api.github.com');
 
 })();

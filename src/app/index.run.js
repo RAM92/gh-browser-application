@@ -6,8 +6,10 @@
     .run(runBlock);
 
   /** @ngInject */
-  function runBlock($log) {
-
+  function runBlock($log, ghUser) {
+    ghUser().then(function (data) {
+      console.log(data);
+    });
     $log.debug('runBlock end');
   }
 
