@@ -3,10 +3,10 @@
 
   angular
     .module('ghApplication')
-    .controller('RepoController', MainController);
+    .controller('RepoController', RepoController);
 
   /** @ngInject */
-  function MainController() {
+  function RepoController() {
 
   }
 })();

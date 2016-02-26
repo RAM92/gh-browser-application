@@ -12,6 +12,8 @@
     
     //Set base url for API
     RestangularProvider.setBaseUrl(GITHUB_URL);
+    //Save API calls
+    RestangularProvider.setDefaultHttpFields({cache: true});
 
     // Set options third-party lib
     toastrConfig.allowHtml = true;

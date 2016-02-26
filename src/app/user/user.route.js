@@ -11,7 +11,7 @@
       .state('user', {
         url: '/user',
         templateUrl: 'app/user/user.html',
-        controller: function () {},
+        controller: 'UserController',
         controllerAs: 'user'
       });
   }

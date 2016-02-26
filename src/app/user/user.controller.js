@@ -3,10 +3,10 @@
 
   angular
     .module('ghApplication')
-    .controller('UserController', MainController);
+    .controller('UserController', UserController);
 
   /** @ngInject */
-  function MainController() {
-
+  function UserController(ghUser) {
+    this.user = ghUser();
   }
 })();
