@@ -3,7 +3,7 @@
 
   angular
     .module('ghApplication')
-    .controller('MainController', MainController);
+    .controller('UserController', MainController);
 
   /** @ngInject */
   function MainController() {
