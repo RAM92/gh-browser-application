@@ -12,7 +12,14 @@
         url: '/user',
         templateUrl: 'app/user/user.html',
         controller: 'UserController',
-        controllerAs: 'user'
+        controllerAs: 'user',
+        resolve: {
+          
+          /** @ngInject */
+          data: function (ghUser) {
+            return ghUser();
+          }
+        }
       });
   }
 

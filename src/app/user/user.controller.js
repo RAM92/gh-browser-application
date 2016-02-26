@@ -6,7 +6,7 @@
     .controller('UserController', UserController);
 
   /** @ngInject */
-  function UserController(ghUser) {
-    this.user = ghUser();
+  function UserController(data) {
+    this.data=data;
   }
 })();
