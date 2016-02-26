@@ -6,9 +6,12 @@
     .config(config);
 
   /** @ngInject */
-  function config($logProvider, toastrConfig) {
+  function config($logProvider, toastrConfig, RestangularProvider, GITHUB_URL) {
     // Enable log
     $logProvider.debugEnabled(true);
+    
+    //Set base url for API
+    RestangularProvider.setBaseUrl(GITHUB_URL);
 
     // Set options third-party lib
     toastrConfig.allowHtml = true;
