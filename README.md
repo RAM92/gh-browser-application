@@ -48,11 +48,8 @@ It was established that the following tools would be used:
 - Didn't get round to using icons
 - Vastly inferior to githubs own website
 
-##Installation
+##Running
+
 ```bash
-npm install && bower install
-```
-To run:
-```bash
-gulp serve
+cd dist && python -m SimpleHTTPServer 8080
 ```
