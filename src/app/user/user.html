@@ -13,7 +13,7 @@
           <span>{{repo.forks}} forks</span>
           <span>{{repo.stargazers_count}} stars</span>
           <span>{{repo.watchers}} watchers</span>
-          <md-button ui-sref="repo({id: repo.id})">View</md-button>
+          <md-button ui-sref="repo({user: user.data.login, repo: repo.name})">View</md-button>
           <!--<p>{{ item.notes }}</p>-->
         </div>
       </md-list-item>

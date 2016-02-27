@@ -17,8 +17,9 @@
                   user.repos = repos;
                   var repoCache = $cacheFactory.get('repo') || $cacheFactory('repo');
                   repos.forEach(function (repo) {
-                      if (!repoCache.get(repo.id)) {
-                          repoCache.put(repo.id, repo);
+                      var idStr = username + '/' + repo.name;
+                      if (!repoCache.get(idStr)) {
+                          repoCache.put(idStr, repo);
                       }
                   });
                   return user;
