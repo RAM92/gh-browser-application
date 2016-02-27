@@ -43,6 +43,7 @@ It was established that the following tools would be used:
 - No authentication with github api
 - No pagination for users with lots of repos
 - Always fetches all repos for the specified user immediately
+- No error handling
 - No tests
 - Didn't get round to using icons
 - Vastly inferior to githubs own website
