@@ -1,6 +1,6 @@
-#Simple github browser
+# Simple github browser
 
-##Preface
+## Preface
 As part of a job application, I was tasked with designing a web app with
 the ability to view a restricted subset of a github user's repos.
 
@@ -21,11 +21,11 @@ A four hour time limit was also imposed.
 
 ---
 
-##Project philosophy
+## Project philosophy
 - The best kind of code is code I don't have to write
 - Minimal time will be spent on project
 
-##Planning
+## Planning
 Prior to development, some simple analysis was done on the requirements.
 The following key points were identified:
 - Github provides a simple REST API
@@ -39,7 +39,7 @@ It was established that the following tools would be used:
 - octicons was included for github icons
 - angular-material for any UI widgets
 
-##Shortcomings
+## Shortcomings
 - No authentication with github api
 - No pagination for users with lots of repos
 - Always fetches all repos for the specified user immediately
@@ -48,7 +48,7 @@ It was established that the following tools would be used:
 - Didn't get round to using icons
 - Vastly inferior to githubs own website
 
-##Running
+## Running
 
 ```bash
 cd dist && python -m SimpleHTTPServer 8080
